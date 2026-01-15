@@ -72,15 +72,26 @@
       bottom: 16px;
       background: rgba(0,0,0,0.75);
       color: #fff;
-      padding: 10px 14px;
+      padding: 12px 18px; /* büyüttüm */
       border-radius: 999px;
-      font-size: 14px;
+      font-size: 18px; /* büyüttüm */
       text-decoration: none;
       box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .insta .emoji {
+      font-size: 22px; /* emoji daha büyük */
+      line-height: 1;
     }
 
     .insta:hover {
-      opacity: 0.9;
+      opacity: 0.95;
+      transform: scale(1.06);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.28);
     }
   </style>
 </head>
@@ -107,7 +118,8 @@
 
   <!-- Instagram -->
   <a class="insta" href="https://www.instagram.com/ademmert.sancar" target="_blank">
-    📷 @ademmert.sancar
+    <span class="emoji">📷</span>
+    <span>@ademmert.sancar</span>
   </a>
 
   <script>
